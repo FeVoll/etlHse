@@ -22,9 +22,9 @@
 
 ### Создание необходимых директорий (на примере Windows). Укажите в docker-compose нужную директорию
 ```
-C:/Users/UserPC/Documents/elt3/airflow/dags
-C:/Users/UserPC/Documents/elt3/airflow/logs
-C:/Users/UserPC/Documents/elt3/airflow/plugins
+C:/Users/UserPC/Documents/etl3/airflow/dags
+C:/Users/UserPC/Documents/etl3/airflow/logs
+C:/Users/UserPC/Documents/etl3/airflow/plugins
 ```
 
 ### Dockerfile
@@ -68,9 +68,9 @@ services:
       - AIRFLOW__CORE__FERNET_KEY=(вставьте ключ)
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://user:password@postgres:5432/etl_db
     volumes:
-      - C:/Users/UserPC/Documents/elt3/airflow/dags:/opt/airflow/dags
-      - C:/Users/UserPC/Documents/elt3/airflow/logs:/opt/airflow/logs
-      - C:/Users/UserPC/Documents/elt3/airflow/plugins:/opt/airflow/plugins
+      - C:/Users/UserPC/Documents/etl3/airflow/dags:/opt/airflow/dags
+      - C:/Users/UserPC/Documents/etl3/airflow/logs:/opt/airflow/logs
+      - C:/Users/UserPC/Documents/etl3/airflow/plugins:/opt/airflow/plugins
     depends_on:
       - postgres
       - mongodb
@@ -86,9 +86,9 @@ services:
       - AIRFLOW__CORE__FERNET_KEY=(вставьте ключ)
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://user:password@postgres:5432/etl_db
     volumes:
-      - C:/Users/UserPC/Documents/elt3/airflow/dags:/opt/airflow/dags
-      - C:/Users/UserPC/Documents/elt3/airflow/logs:/opt/airflow/logs
-      - C:/Users/UserPC/Documents/elt3/airflow/plugins:/opt/airflow/plugins
+      - C:/Users/UserPC/Documents/etl3/airflow/dags:/opt/airflow/dags
+      - C:/Users/UserPC/Documents/etl3/airflow/logs:/opt/airflow/logs
+      - C:/Users/UserPC/Documents/etl3/airflow/plugins:/opt/airflow/plugins
     depends_on:
       - postgres
       - mongodb
